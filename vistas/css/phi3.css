@@ -1,0 +1,398 @@
+:root {
+    --red-tbr: #DE4D4C;
+    --dark-red: #BC3B3B;
+    --darker-red: #991a1a;
+
+    --blue-tbr: #27699D;
+    --dark-blue: #06202a;
+    --darker-blue: #041921;
+
+    --white: #fff;
+    --soft-gray: #E5E4E4;
+    --gray: #606060;
+    --dark-gray: #26292B;
+
+    --black: #000;
+    --shadow-color: ##aaa8a8;
+}
+
+
+.content_container{
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+/*-------------------------------*/
+/*------VIDEO-PHI----------------*/
+/*-------------------------------*/
+
+/*.video-phi{
+    width: 100%;
+    height: 600px;
+    display: none;
+}*/
+
+.phi_img{
+  padding-top: 50px;
+  width: 100%;
+}
+
+.phi_img img{
+  width: 100%;
+  height: 500px;
+}
+
+/*-------------------------------*/
+/*------INFO-PHI3----------------*/
+/*-------------------------------*/
+
+.info-phi{
+    width: 100%; 
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "info-phi-I            info-phi-II";
+}
+
+.info-phi-I{
+    grid-area: info-phi-I;
+}
+
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.wrapper{
+ 
+}
+.wrapper .parent-tab,
+.wrapper .child-tab{
+  margin-bottom: 50px;
+  border-radius: 3px;
+ /* box-shadow: 0px 0px 15px rgba(0,0,0,0.18);*/
+}
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+  /*background: #27699D;*/
+  background-color: #06202a;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*cursor: pointer;*/
+  border-radius: 3px;
+  position: relative;
+  /*z-index: 1;*/
+  transition: all 0.3s ease;
+}
+.wrapper .parent-tab label:hover{
+  background:#06202a;
+}
+
+.parent-tab input:checked ~ label,
+.child-tab input:checked ~ label{
+  border-radius: 3px 3px 0 0;
+  background: #06202a;
+  color: #fff;
+}
+.wrapper label span{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  /*text-shadow: 0 -1px 1px #0056b3;*/
+}
+.wrapper h1{
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  background: #06202a;
+  margin-bottom: 20px;
+}
+.wrapper .child-tab label span{
+  font-size: 17px;
+}
+.parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  border-radius: 50%;
+  visibility: hidden;
+  /*text-shadow: 0 -1px 1px #0056b3;*/
+}
+.wrapper .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+  /*content: '\f068'; */
+}
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  padding-left: 25px;
+  padding-right: 25px;
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+  box-shadow: 10px 10px 10px #606060;
+}
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.parent-tab .content p,
+.child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.child-tab .sub-content p{
+  font-size: 15px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+.wrapper-container .wrapper .eliminar{
+  display: none;
+}
+
+.info-phi-II{
+    grid-area: info-phi-II;
+}
+
+.info-phi-III{
+    grid-area: info-phi-III;
+    width: 100%;
+}
+
+.wrapper .parent-tab .content{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: "cont_I      cont_II";
+  overflow-y: hidden;
+}
+
+.cont_I{
+  grid-area: cont_I;
+}
+.cont_II{
+  grid-area: cont_II;
+}
+
+/*------------------------------*/
+/*-----------MODULOS------------*/
+/*------------------------------*/
+.modulos{
+  padding-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: "modulo_I      modulo_II"
+                       "modulo_III    modulo_IV";
+}
+
+.modulo .modulos_btn{
+  padding-top: 20px;
+}
+
+.modulo_I{
+  grid-area: modulo_I;
+}
+.modulo_I a{
+    display: none;
+}
+.modulo_II{
+  grid-area: modulo_II;
+}
+.modulo_III{
+  grid-area: modulo_III;
+}
+.modulo_IV{
+  grid-area: modulo_IV;
+}
+
+.modulos img{
+  width: 100%;
+}
+
+.modulos_btn{
+    padding-top: 20px;
+}
+
+/*------------------------------*/
+/*-----------MODULOS------------*/
+/*------------------------------*/
+
+.preguntas_frecuentes{
+  padding-top: 100px;
+}
+
+.preguntas_frecuentes h6{
+  padding-bottom: 20px;
+}
+.preguntas_frecuentes p, .preguntas_frecuentes ul{
+  padding-bottom: 50px;
+  border-bottom: 1px solid #27699D;
+}
+
+
+
+.preguntas_frecuentes ul{
+  font-size: 1.2em;
+  padding-left: 70px;
+}
+.preguntas_frecuentes ul li{
+  list-style: disc;
+  padding-bottom: 10px;
+}
+
+/*------------------------------*/
+/*-------RESPONSIVE 800---------*/
+/*------------------------------*/
+
+@media screen and (max-width: 800px){
+  .content_container{
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  grid-template-columns: 1fr;
+  grid-template-areas: "cont_I"      
+                       "cont_II";
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: scroll;
+}
+
+.video-phi{
+    height: 400px;
+}
+.phi_img img{
+  height: 300px;
+}
+.info-phi{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "info-phi-I            info-phi-II";
+}
+}
+/*---------------------------*/
+/*------RESPONSIVE 600------*/
+/*-------------------------*/
+
+@media screen and (max-width: 600px){
+.video-phi{
+    width: 500px;
+    height: 270px;
+}
+
+.phi_img img{
+  height: 220px;
+}
+
+.info-phi{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "info-phi-II"            
+                         "info-phi-I"
+                         "info-phi-III";
+}
+
+.modulos{
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: "modulo_I"
+                       "modulo_II"
+                       "modulo_III"
+                       "modulo_IV";
+}
+
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 500------*/
+/*-------------------------*/
+
+@media screen and (max-width: 500px){
+
+.aca-phi h3{
+    font-size: 1.6em;
+}
+.aca-phi img{
+    max-width: 314px;
+}
+
+.video-phi{
+    width: 400px;
+    height: 250px;
+}
+
+.phi_img img{
+  height: 180px;
+}
+}
+
+
+/*---------------------------*/
+/*------RESPONSIVE 370------*/
+/*-------------------------*/
+
+@media screen and (max-width: 370px){
+p{
+  font-size: 1em;
+}
+.content_container{
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.video-phi{
+    width: 330px;
+    height: 180px;
+}
+
+.phi_img img{
+  height: 150px;
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.modulo_I, .modulo_II, .modulo_III, .modulo_IV{
+  padding-bottom: 20px;
+}
+
+.preguntas_frecuentes ul{
+  padding-left: 30px;
+}
+
+}
+

@@ -1,0 +1,284 @@
+:root {
+    --red-tbr: #DE4D4C;
+    --dark-red: #BC3B3B;
+    --darker-red: #991a1a;
+
+    --blue-tbr: #27699D;
+    --dark-blue: #06202a;
+    --darker-blue: #041921;
+
+    --white: #fff;
+    --soft-gray: #E5E4E4;
+    --gray: #606060;
+    --dark-gray: #26292B;
+
+    --black: #000;
+    --shadow-color: ##aaa8a8;
+}
+
+
+html{
+    /*scroll-behavior: smooth;*/
+} 
+.content{
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.flexslider{
+    display: none;
+}
+
+
+/*---------------------------------*/
+/*------------PROPÓSITO------------*/
+/*---------------------------------*/
+
+.tit_proposito{
+    padding-left: 50px;
+    padding-top: 30px;
+    width:  100%;
+}
+
+.proposito{
+    width:  100%;
+    padding-top: 30px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "proposito_I          proposito_II";
+}
+
+.proposito_I{
+    grid-area: proposito_I;
+    margin-top: 40px;
+}
+.proposito_I p{
+    margin-top: 50px;
+}
+.proposito_II{
+    grid-area: proposito_II;
+    width: 100%;
+}
+.proposito_II img{
+    width: 100%;
+    max-width: 500px;
+}
+
+/*-----------------------------------*/
+/*------------CAPACIDADES------------*/
+/*-----------------------------------*/
+.capacidades{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width:  100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "capacidades_II          capacidades_I";
+}
+
+.capacidades_video{
+    width: 100%;
+    max-width: 350px;
+}
+.capacidades_I{
+    grid-area: capacidades_I;
+    text-align: right;
+}
+.capacidades_I h5{
+    margin-top: 50px;
+}
+.capacidades_I p{
+    margin-top: 50px;
+}
+.capacidades_II{
+    grid-area: capacidades_II;
+}
+
+/*---------------------------------*/
+/*------------SERVICIOS------------*/
+/*---------------------------------*/
+
+.tit_servicios{
+    padding-top: 80px;
+    width:  100%;
+}
+.servicios{
+    width:  100%;
+    padding-top: 30px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "academia      industria       gobierno";
+}
+.academia{
+    grid-area: academia;
+}
+
+.academia br{
+    margin-top: 25px;
+}
+.servicios img{
+    width: 100%;
+}
+
+.gobierno{
+    grid-area: gobierno;
+}
+.gobierno h5{
+    padding-top: 14.5px;
+}
+.gobierno img{
+    width: 100%;
+}
+.servicios img{
+    border-radius: 10px;
+}
+
+.servicios .serv_btn{
+    padding-top: 50px;
+}
+
+
+/*---------------------------*/
+/*-------RESPONSIVE 800------*/
+/*---------------------------*/
+
+@media screen and (max-width: 800px){
+    .flexslider{
+        display: block;
+    }
+    
+    .slider{
+        display: none;
+    }
+
+.content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+    
+.tit_proposito{
+   padding-left: 10px;     
+}
+.proposito{
+    padding-right: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "proposito_I"          
+                         "proposito_II";
+}
+    
+.proposito_I{
+    padding-top: 0px;    
+}
+.proposito_II img{
+   max-width: 400px;  
+}
+
+.capacidades{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 0px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "capacidades_I"          
+                        "capacidades_II";
+}
+    .capacidades_I{
+        text-align: left;
+    }
+    
+.capacidades_video{
+    width: 300px;
+}
+
+.servicios{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(1fr, 2);
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "academia      industria"       
+                         "gobierno      gobierno";
+}
+
+.industria br{
+    margin-top: 1px;
+}
+
+.gobierno img{
+    max-width: 450px;
+}
+
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 600------*/
+/*---------------------------*/
+
+@media screen and (max-width: 600px){
+.content{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.servicios{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "academia"
+                         "industria"       
+                         "gobierno";
+}
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 500------*/
+/*---------------------------*/
+
+@media screen and (max-width: 500px){
+.capacidades_I p, .proposito_I p{
+    margin-top: 20px;
+}
+
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 370------*/
+/*---------------------------*/
+
+@media screen and (max-width: 370px){
+h5{
+    font-size: 1.3em;
+}
+p{
+    font-size: 1em;
+}
+
+.proposito_video, .capacidades_video{
+    width: 200px;
+}
+    .capacidades, .proposito{
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+}
+
+
+
+
+

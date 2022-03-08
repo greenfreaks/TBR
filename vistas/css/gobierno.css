@@ -1,0 +1,185 @@
+:root {
+    --red-tbr: #DE4D4C;
+    --dark-red: #BC3B3B;
+    --darker-red: #991a1a;
+
+    --blue-tbr: #27699D;
+    --dark-blue: #06202a;
+    --darker-blue: #041921;
+
+    --white: #fff;
+    --soft-gray: #E5E4E4;
+    --gray: #606060;
+    --dark-gray: #26292B;
+
+    --black: #000;
+    --shadow-color: ##aaa8a8;
+}
+
+.content{
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/*---------------------------------*/
+/*------------ELEMENTS-------------*/
+/*---------------------------------*/
+
+/*-----------------------------------*/
+/*------------ACADEMIA---------------*/
+/*-----------------------------------*/
+.tit_academia{
+    padding-top: 40px;
+    width:  100%;
+}
+
+/*---------------------------*/
+/*-----------PHI-------------*/
+/*---------------------------*/
+.phi, .pact{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.phi{
+    width:  100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "phi_II          phi_I";
+}
+
+.phi_img{
+    width: 100%;
+    max-width: 350px;
+}
+.phi_I{
+    grid-area: phi_I;
+    margin-top: 70px;
+}
+.phi_I h5{
+    margin-top: 50px;
+}
+.phi_I p{
+    margin-top: 50px;
+}
+.phi_II{
+    grid-area: phi_II;
+}
+
+/*-------------------------------*/
+/*-----------PACT----------------*/
+/*-------------------------------*/
+.pact{
+    margin-top: 100px;
+    width:  100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "pact_II          pact_I";
+}
+
+.pact_img{
+    width: 100%;
+    max-width: 250px;
+}
+.pact_I{
+    grid-area: pact_I;
+}
+.pact_I h5{
+    margin-top: 50px;
+}
+.pact_I p{
+    margin-top: 50px;
+}
+.pact_II{
+    grid-area: pact_II;
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 800------*/
+/*---------------------------*/
+
+@media screen and (max-width: 800px){
+.phi, .pact{
+    padding-right: 0px;
+    padding-left: 0px;
+    grid-gap: 20px;
+}
+.phi p, .pact_I p{
+    margin-top: 10px;
+}
+.content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.phi{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "phi_I"          
+                         "phi_II";
+    margin-bottom: 20px;
+}
+
+.pact{
+    margin-top: 0px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "pact_I"          
+                        "pact_II";
+}
+
+.phi_img, .pact_img{
+    width: 300px;
+}
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 600------*/
+/*---------------------------*/
+
+@media screen and (max-width: 600px){
+.content{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 500------*/
+/*---------------------------*/
+
+@media screen and (max-width: 500px){
+.pact_I p, .phi_I p{
+    margin-top: 20px;
+}
+
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 370------*/
+/*---------------------------*/
+
+@media screen and (max-width: 370px){
+h5{
+    font-size: 1.3em;
+}
+p{
+    font-size: 1em;
+}
+
+.phi_img, .pact_img{
+    width: 200px;
+}
+
+}
+
+
+
+
+
